@@ -6,6 +6,7 @@ export enum CommentStateStatus {
     LOADING = 'loading',
     IDLE = 'idle',
     FAILED = 'failed',
+    DONE = 'done',
 }
 
 export type CommentState = {
@@ -35,7 +36,7 @@ export const commentsSlice = createSlice({
                 state.status = CommentStateStatus.LOADING;
             })
             .addCase(fetchComments.fulfilled, (state, action) => {
-                state.status = CommentStateStatus.IDLE;
+                state.status = CommentStateStatus.DONE;
                 state.comments = action.payload;
             })
             .addCase(fetchComments.rejected, (state) => {
