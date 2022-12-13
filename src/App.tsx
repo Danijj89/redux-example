@@ -5,7 +5,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { CommentsContextProvider } from './react-hooks-example/CommentsContextProvider';
+import { CommentsContextProvider } from './react-hooks-example/context/CommentsContextProvider';
 import { Home } from './react-hooks-example/Home';
 import { ReduxHome } from './redux-example/ReduxHome';
 
@@ -14,10 +14,10 @@ function App() {
   return (
     <Router>
       <CommentsContextProvider>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/redux" element={<ReduxHome />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/redux" element={<ReduxHome />} />
+        </Routes>
       </CommentsContextProvider>
     </Router>
   );

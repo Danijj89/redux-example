@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { CommentsContext } from './CommentsContextProvider';
+import { CommentsContext } from './context/CommentsContextProvider';
 
 export const CommentCount = () => {
     const { comments } = useContext(CommentsContext);

@@ -1,6 +1,6 @@
 import { Reducer } from "react";
 import { CommentsActions, CommentsActionType } from "./commentsActions";
-import { Comment } from "../types";
+import { Comment } from "../../types";
 
 export type CommentsReducerState = {
     comments: Comment[];
@@ -9,8 +9,8 @@ export type CommentsReducerState = {
 export type CommentsReducerType = Reducer<CommentsReducerState, CommentsActionType>
 
 export const commentsReducer: CommentsReducerType = (state: CommentsReducerState, action: CommentsActionType) => {
-    const {type, value} = action;
-    switch(type) {
+    const { type, value } = action;
+    switch (type) {
         case CommentsActions.SET_COMMENTS:
             return {
                 ...state,

@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useCallback, useReducer } from "react";
 import { CommentsActions } from "./commentsActions";
 import { commentsReducer, CommentsReducerType } from "./commentsReducer";
-import { Comment } from "../types";
+import { Comment } from "../../types";
 
 type CommentsContextType = {
     comments: Comment[];
