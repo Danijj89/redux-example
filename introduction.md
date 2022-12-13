@@ -25,7 +25,6 @@ These are state that hold the data that the client requests from the server. Exa
 
 Since this data belongs to the server (the client doesn't own it) and effectively represents the "state" of the server at that point in time, we refer to this as **server state**.
 
-
 ## Links
 - [Redux](https://redux-toolkit.js.org/)
 - [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
