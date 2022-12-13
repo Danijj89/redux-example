@@ -22,6 +22,9 @@ export const commentsSlice = createSlice({
     name: 'comments',
     initialState,
     reducers: {
+        fetchComments: (state, action) => {
+            state.comments = [{ body: "comment 1" }]
+        },
         addComment: (state, action) => {
             state.comments.push(action.payload);
         }
@@ -41,5 +44,5 @@ export const commentsSlice = createSlice({
     }
 });
 
-export const {addComment} = commentsSlice.actions;
+export const { addComment } = commentsSlice.actions;
 export default commentsSlice.reducer;
