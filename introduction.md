@@ -23,4 +23,9 @@ These are state that hold the data that the client requests from the server. Exa
 - Any data that reside in the backend like calibration sessions, employees, job posts, ...
 - State related to the data fetching like isLoading, isError, errorMessage, ...
 
-Since this data belongs to the server (the client doesn't own it) and effectively represents the "state" of the server at that point in time, we refer to this as `server state`.
+Since this data belongs to the server (the client doesn't own it) and effectively represents the "state" of the server at that point in time, we refer to this as **server state**.
+
+## Links
+- [Redux](https://redux-toolkit.js.org/)
+- [React Query](https://tanstack.com/query/v4/?from=reactQueryV3&original=https://react-query-v3.tanstack.com/)
+- [Zustand](https://github.com/pmndrs/zustand)
